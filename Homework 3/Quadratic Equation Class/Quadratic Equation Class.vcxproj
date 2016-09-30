@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C45A3D13-1007-4D1E-B4CE-0C574F1112FA}</ProjectGuid>
+    <ProjectGuid>{DD1B9452-2DA9-4FF8-ABB1-08FD68F2FC3E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Homework3</RootNamespace>
+    <RootNamespace>QuadraticEquationClass</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>Fan Class</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,11 +142,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Fan.h" />
+    <ClInclude Include="QuadraticEquation.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Fan.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="QuadraticEquation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
