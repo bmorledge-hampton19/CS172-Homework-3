@@ -38,12 +38,14 @@ int main() {
 	if (fan1.isOn()) cout << "on." << endl;
 	else cout << "off." << endl;
 
+	// Add some extra aesthetic space.
+	cout << endl;
 
-	cout << "Fan 2 is at speed " << fan1.getSpeed() << "." << endl;
-	cout << "It has radius " << fan1.getRadius() << " and is turned ";
+	cout << "Fan 2 is at speed " << fan2.getSpeed() << "." << endl;
+	cout << "It has radius " << fan2.getRadius() << " and is turned ";
 
 	// Use short if-then to transfer the bool 'on' to the text "on" or "off".
-	if (fan1.isOn()) cout << "on." << endl;
+	if (fan2.isOn()) cout << "on." << endl;
 	else cout << "off." << endl;
 
 	

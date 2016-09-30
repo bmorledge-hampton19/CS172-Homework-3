@@ -2,9 +2,12 @@
 
 Fan::Fan()
 {
+
+	// Default parameters.
 	speed = 1;
 	on = false;
 	radius = 5;
+
 }
 
 bool Fan::setSpeed(int newSpeed)
