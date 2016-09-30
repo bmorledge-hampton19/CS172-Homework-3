@@ -26,7 +26,7 @@ public:
 	// Displays 0 if the discriminant is negative.
 	double getRoot1();
 
-	// Displays the answer to the quadratic equation by adding the square root of the discriminant.
+	// Displays the answer to the quadratic equation by subtracting the square root of the discriminant.
 	// Displays 0 if the discriminant is negative.
 	double getRoot2();
 
