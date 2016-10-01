@@ -52,7 +52,7 @@ public:
 	bool equals(int checkThis) const;
 
 	// Retruns true if the given "MyInteger" is equal to the value in the function's MyInteger object.
-	bool equals(const MyInteger& checkThis);
+	bool equals(const MyInteger& checkThis) const;
 
 
 	// Converts a string to an integer that is the sum of its characters.
