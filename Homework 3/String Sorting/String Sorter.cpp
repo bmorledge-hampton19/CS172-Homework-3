@@ -21,7 +21,7 @@ int main() {
 
 	// Prompt the user to enter a string and call the sort function for that string.
 	cout << "Give a string to be sorted: ";
-	cin >> sortableString;
+	getline(cin,sortableString);
 
 	sort(sortableString);
 
@@ -46,13 +46,13 @@ string sort(string& s) {
 	// Two for loops in a nest will sort the string.
 	// The first loop determines the starting point for the sort which will increment each time the second loop finds the highest nonsorted character and moves it to the front of the string.
 
-	for (int i = 0; i < s.length; i++) {
+	for (int i = 0; i < s.length(); i++) {
 
 		// Set the first unsorted character as the default highestValue.
 		highestValueChar = s.at(i);
 		highestValuePos = i;
 
-		for (int j = i+1; j < s.length; j++) {
+		for (int j = i+1; j < s.length(); j++) {
 
 			// Determine the highest value nonsorted character (as lowercase) in the string by checking each character with the highest value so far, and replacing that value if necesarry.
 			if (tolower(highestValueChar) < tolower(s.at(j))) {
@@ -68,5 +68,7 @@ string sort(string& s) {
 		s = highestValueChar + s;
 
 	}
+
+	return s;
 
 }
